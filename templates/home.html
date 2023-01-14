@@ -6,14 +6,15 @@
         <title>Home</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <link rel="stylesheet" href="">
     </head>
-    <body>
-        <h1>Vice Versa<h1>
-        <form action="{% url 'reverse' %}">
-                <textarea cols="50" rows="10" name="usertext"></textarea>
+    <body  class="bg-primary">
+        <div class="mx-auto mt-2 fs-1" style="width: 400px;">Vice Versa Project</div>
+        <form action="{% url 'reverse' %}" class="mx-auto" style="width:400px;">
+                <textarea cols="30" rows="5" name="usertext" class="fs-3" placeholder="Enter any text"></textarea>
                 <br>
-                <input type="submit" value="Reverse">        
+                <input type="submit" class="btn btn-secondary btn-lg" value="Reverse">        
         </form>
         <script src="" async defer></script>
     </body>
